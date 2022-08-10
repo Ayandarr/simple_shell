@@ -1,11 +1,12 @@
 
+
 #include "shell.h"
 
 /**
- ** free_memory_p - Free a pointer
+ * free_memory_p - Free a pointer
  **
- ** @ptr: Pointer to free
- ***/
+ * @ptr: Pointer to free
+ **/
 void free_memory_p(char *ptr)
 {
 	if (ptr != NULL)
@@ -21,7 +22,7 @@ void free_memory_p(char *ptr)
  ** free_memory_pp - Free a double pointer
  **
  ** @ptr: Double pointer to free
- ***/
+ **/
 void free_memory_pp(char **ptr)
 {
 	char **tmp;
@@ -33,8 +34,8 @@ void free_memory_pp(char **ptr)
 }
 
 /**
- ** cmp - checks if a string in another
- ** @s1: the string to be searched
+ * cmp - checks if a string in another
+ * @s1: the string to be searched
  ** @s2: the string being searched for
  *
  ** Description: This is different from the _strcmp function
@@ -50,7 +51,7 @@ int cmp(const char *s1, const char *s2)
 }
 
 /**
- ** _isalpha - checks if a character is a letter
+ * _isalpha - checks if a character is a letter
  ** @c: the given character
  **
  ** Return: TRUE if true, else FALSE
@@ -64,9 +65,9 @@ int _isalpha(char c)
 }
 
 /**
- ** _atoi - convert a string to an integer.
+ * _atoi - convert a string to an integer.
  ** @s: the string to be converted.
- **
+ *
  ** Return: int.
  **/
 int _atoi(char *s)
@@ -86,11 +87,11 @@ int _atoi(char *s)
 			digit = s[i] - '0';
 			if (d % 2)
 				digit = -digit;
-				n = n * 10 + digit;
-				FLAG = 1;
-				if (s[i + 1] < 48 || s[i + 1] > 57)
-					break;
-					FLAG = 0;
+			n = n * 10 + digit;
+			FLAG = 1;
+			if (s[i + 1] < 48 || s[i + 1] > 57)
+				break;
+			FLAG = 0;
 		}
 		i++;
 	}

@@ -35,7 +35,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		if ((*haystack == *needle) && cmp(haystack, needle))
 			return (haystack);
-			haystack++;
+		haystack++;
 	}
 
 	return (NULL);
@@ -75,7 +75,7 @@ char *_strcat(char *dest, const char *src)
 
 	while (src[i])
 		dest[len_dest++] = src[i++];
-		dest[len_dest] = '\0';
+	dest[len_dest] = '\0';
 
 	return (dest);
 }
