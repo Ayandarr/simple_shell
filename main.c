@@ -2,8 +2,8 @@
 
 /**
  * main - The User Interface
- * @argc: Unused
- * @argv: an array of command line arguments passed to the command name
+ * argc: Unused
+ * argv: an array of command line arguments passed to the command name
  *
  * Return: Always 0
  */
